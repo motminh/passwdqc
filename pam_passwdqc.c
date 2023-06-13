@@ -5,15 +5,10 @@
  * See LICENSE
  */
 
-#ifdef __FreeBSD__
-/* For vsnprintf(3) */
-#define _XOPEN_SOURCE 600
-#else
 #define _XOPEN_SOURCE 500
 #define _XOPEN_SOURCE_EXTENDED
 #define _XOPEN_VERSION 500
 #define _DEFAULT_SOURCE
-#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
